@@ -1,12 +1,12 @@
-import * as chalk from 'chalk';
-import * as env from './src/environments/environment';
-import * as envProduction from './src/environments/environment.prod';
-import * as envDev from './src/environments/environment.dev';
+const chalk = require('chalk');
+import * as env from '../src/environments/environment';
+import * as envProduction from '../src/environments/environment.prod';
+import * as envDev from '../src/environments/environment.dev';
 
 let config: any = {};
 
 const log = console.log;
-// log(process.argv[2]);
+log(process.argv[2]);
 const arg = process.argv[2];
 
 if (arg == 'serve') {
